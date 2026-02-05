@@ -1,30 +1,7 @@
 
 import { StarFilled } from '@ant-design/icons';
 import { Avatar } from 'antd';
-
-const reviews = [
-    {
-        id: 1,
-        name: 'Ms Amelia',
-        role: 'Seller Etsy tại Hà Nội',
-        content: 'So far so good! ♥️ Cho đến nay tôi đã có một trải nghiệm tuyệt vời! Trang web dễ sử dụng và dịch vụ hoàn hảo với Etsy. Tôi rất háo hức muốn xem điều này sẽ đưa tôi đến đâu khi tôi tiếp tục xây dựng và phát triển cửa hàng của mình.',
-        avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
-    },
-    {
-        id: 2,
-        name: 'Phillip Nguyễn',
-        role: 'Seller ở TP Hồ Chí Minh',
-        content: 'Comfort Colors 1717 T Shirt is good quality. Good material! Clarity of design is great.',
-        avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-    },
-    {
-        id: 3,
-        name: 'Sarah Tran',
-        role: 'Dropshipper',
-        content: 'Dịch vụ hỗ trợ rất nhiệt tình, mình mới bắt đầu nhưng được hướng dẫn rất chi tiết. Đơn đi khá nhanh.',
-        avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
-    },
-];
+import { reviews } from '../../../constants';
 
 export default function Testimonials() {
     return (

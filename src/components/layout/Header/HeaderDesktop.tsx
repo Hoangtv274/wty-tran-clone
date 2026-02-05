@@ -36,11 +36,11 @@ export default function HeaderDesktop() {
               {/* Dropdown Content can be added here */}
             </div>
 
-            <Link to="/san-pham" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors">
+            <Link to="/products" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors">
               SẢN PHẨM
             </Link>
 
-            <Link to="/tin-tuc" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors">
+            <Link to="/news" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors">
               TIN TỨC – KIẾN THỨC
             </Link>
 

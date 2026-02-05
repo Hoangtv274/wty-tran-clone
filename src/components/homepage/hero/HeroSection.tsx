@@ -1,30 +1,7 @@
 
 import { Carousel, Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
-import banner1 from '../../assets/images/banner1.png';
-import banner2 from '../../assets/images/banner2.png';
-import banner3 from '../../assets/images/banner3.png';
-
-const slides = [
-    {
-        id: 1,
-        image: banner1,
-        title: 'Professional DTG Printing',
-        subtitle: 'High Quality & Fast Production',
-    },
-    {
-        id: 2,
-        image: banner2,
-        title: 'Create Your Own Brand',
-        subtitle: 'Start selling today with zero inventory',
-    },
-    {
-        id: 3,
-        image: banner3,
-        title: 'Fulfillment Made Easy',
-        subtitle: 'We handle printing and shipping for you',
-    }
-];
+import { slides } from '../../../constants';
 
 export default function HeroSection() {
     return (

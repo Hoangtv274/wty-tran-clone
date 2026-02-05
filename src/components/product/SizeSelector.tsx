@@ -21,8 +21,8 @@ const SizeSelector: React.FC<SizeSelectorProps> = ({ sizes, onSizeSelect }) => {
           <button
             key={size}
             className={`min-w-[60px] h-12 px-5 rounded-lg font-semibold text-sm transition-all duration-300 ${selectedSize === size
-                ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/40 border-2 border-purple-600'
-                : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-purple-500 hover:-translate-y-1 hover:shadow-md'
+              ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/40 border-2 border-purple-600'
+              : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-purple-500 hover:-translate-y-1 hover:shadow-md'
               }`}
             onClick={() => handleSizeClick(size)}
           >

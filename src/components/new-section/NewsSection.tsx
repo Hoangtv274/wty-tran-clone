@@ -19,7 +19,7 @@ const news = [
 
 export default function NewsSection() {
     return (
-        <section className="py-20">
+        <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-end mb-12">
                     <div>

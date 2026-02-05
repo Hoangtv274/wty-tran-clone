@@ -31,7 +31,7 @@ export default function HeroSection() {
         <section className="relative bg-gray-900 text-white overflow-hidden">
             <Carousel autoplay effect="fade" autoplaySpeed={5000}>
                 {slides.map((slide) => (
-                    <div key={slide.id} className="relative h-[600px] w-full">
+                    <div key={slide.id} className="relative h-[800px] w-full">
                         <div
                             className="absolute inset-0 bg-cover bg-center"
                             style={{ backgroundImage: `url(${slide.image})` }}

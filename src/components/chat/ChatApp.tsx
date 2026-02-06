@@ -43,6 +43,19 @@ const ChatApp: React.FC = () => {
             console.log('Connected to chat server');
         });
 
+        // Listen for message history
+        newSocket.on('message_history', (history: any[]) => {
+            const historyMessages: Message[] = history.map((msg) => ({
+                id: msg._id || Date.now().toString() + Math.random(),
+                username: msg.username,
+                text: msg.text,
+                timestamp: new Date(msg.timestamp),
+                isPersonal: false,
+                isLoading: false
+            }));
+            setMessages(historyMessages);
+        });
+
         // Listen for chat updates
         newSocket.on('updatechat', (user: string, text: string) => {
             const newMessage: Message = {

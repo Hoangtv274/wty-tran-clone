@@ -38,25 +38,12 @@ const ChatApp: React.FC = () => {
 
         setSocket(newSocket);
 
-        // Connection established
         newSocket.on('connect', () => {
             console.log('Connected to chat server');
+            const username = `User${Math.floor(Math.random() * 10000)}`;
+            newSocket.emit('adduser', username);
         });
 
-        // Listen for message history
-        newSocket.on('message_history', (history: any[]) => {
-            const historyMessages: Message[] = history.map((msg) => ({
-                id: msg._id || Date.now().toString() + Math.random(),
-                username: msg.username,
-                text: msg.text,
-                timestamp: new Date(msg.timestamp),
-                isPersonal: false,
-                isLoading: false
-            }));
-            setMessages(historyMessages);
-        });
-
-        // Listen for chat updates
         newSocket.on('updatechat', (user: string, text: string) => {
             const newMessage: Message = {
                 id: Date.now().toString() + Math.random(),
@@ -70,7 +57,6 @@ const ChatApp: React.FC = () => {
             setMessages(prev => [...prev, newMessage]);
         });
 
-        // Listen for private messages
         newSocket.on('msg_user_handle', (user: string, text: string) => {
             const newMessage: Message = {
                 id: Date.now().toString() + Math.random(),

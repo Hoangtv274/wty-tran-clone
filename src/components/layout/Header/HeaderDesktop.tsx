@@ -29,11 +29,9 @@ export default function HeaderDesktop() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
             <div className="group relative cursor-pointer">
-              <span className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors flex items-center gap-1">
+              <Link to="/about" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors flex items-center gap-1">
                 GIỚI THIỆU
-                <CaretDownOutlined className="text-xs" />
-              </span>
-              {/* Dropdown Content can be added here */}
+              </Link>
             </div>
 
             <Link to="/products" className="text-gray-700 hover:text-blue-600 font-bold text-sm uppercase transition-colors">

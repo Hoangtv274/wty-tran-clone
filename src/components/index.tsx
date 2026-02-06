@@ -10,3 +10,9 @@ export { default as Testimonials } from './homepage/testimonials/Testimonials';
 export { default as ProductGallery } from './product/ProductGallery';
 export { default as SizeSelector } from './product/SizeSelector';
 export { default as ProductSpecs } from './product/ProductSpecs';
+
+// About components
+export { default as AboutHero } from './about/AboutHero';
+export { default as CompanyInfo } from './about/CompanyInfo';
+export { default as WorkingHours } from './about/WorkingHours';
+export { default as ContactSection } from './about/ContactSection';
